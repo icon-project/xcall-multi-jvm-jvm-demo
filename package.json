@@ -1,0 +1,26 @@
+{
+  "name": "xcall-multi-jvm-jvm-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "node ./scripts/deploy-simple-dapp.js",
+    "send-msg": "node ./scripts/test-send-message-simple.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@cosmjs/proto-signing": "^0.31.3",
+    "@cosmjs/stargate": "^0.31.3",
+    "dotenv": "^16.3.1",
+    "ethers": "^5.7.2",
+    "icon-sdk-js": "^1.5.2",
+    "web3": "^4.0.2",
+    "web3-utils": "^4.0.7"
+  },
+  "devDependencies": {
+    "eslint": "^8.43.0"
+  }
+}
