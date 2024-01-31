@@ -30,15 +30,15 @@ const HAVAH_WALLET = IconWallet.loadPrivateKey(PK_HAVAH);
 const contractByteCode = getContractByteCode(dappSimplePath);
 // const contractByteCode = getContractBytesFromJson(dappJsonPath).hash;
 
-let RUN_ICON_DEPLOYMENT = true;
-let RUN_HAVAH_DEPLOYMENT = true;
+let RUN_ICON_DEPLOYMENT = false;
+let RUN_HAVAH_DEPLOYMENT = false;
 
-if (dappSimple.lisbon == null) {
-  RUN_ICON_DEPLOYMENT = false;
+if (!dappSimple.lisbon) {
+  RUN_ICON_DEPLOYMENT = true;
 } else {
   console.log(`Dapp already deployed to lisbon: ${dappSimple.lisbon}`);
 }
-if (dappSimple.altair == null) {
+if (!dappSimple.altair) {
   RUN_HAVAH_DEPLOYMENT = true;
 } else {
   console.log(`Dapp already deployed to altair: ${dappSimple.altair}`);
